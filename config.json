@@ -1,4 +1,9 @@
 {
+  "videos": {
+    "src": "_src/assets/videos/**/*.*",
+    "dest": "public/assets/videos/",
+    "dist": "docs/assets/videos/"
+  },
   "icons": {
     "src": "_src/assets/icons/*.*",
     "dest": "public/",
