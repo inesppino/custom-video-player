@@ -23,7 +23,12 @@ function updateButton() {
   playButton.textContent = icon;
 }
 
+function skip() {
+  video.currentTime += parseFloat(this.dataset.skip);
+}
+
 video.addEventListener('click', togglePlay);
 video.addEventListener('play', updateButton);
 video.addEventListener('pause', updateButton);
 playButton.addEventListener('click', togglePlay);
+skipButtons.forEach(button => button.addEventListener('click', skip));
